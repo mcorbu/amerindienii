@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigenous America & Colonization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#fff;
+            position: center;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+    <section style="
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amerikanska_folk%2C_Nordisk_familjebok.jpg/1280px-Amerikanska_folk%2C_Nordisk_familjebok.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+">
+    <h1>Populațiile indigene ale Americii și Colonizarea</h1>
+</section>
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <button onclick="redirectTo('index.html')">Acasă</button>
+            <button onclick="redirectTo('evenimente.html')">Evenimente</button>
+            <button onclick="redirectTo('triburi.html')">Triburi</button>
+            <button onclick="redirectTo('legende.html')">Legende</button>
+            <button onclick="redirectTo('galerie.html')">Galerie</button>
+            <button onclick="redirectTo('Bibliografie.html')">Bibliografie</button>
+        </nav>
+    </div>
+    
+    <style>
+        .header {
+            background: #463216;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu button {
+            background: #8b7454;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background: #8d8883;
+        }
+    </style>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <div class="container">
+        <h2>Acasă</h2>
+        <p>Nu se știe definitiv cum sau când nativii americani au stabilit pentru prima dată America și Statele Unite ale Americii de astăzi. Teoria predominantă sugerează că oamenii din Eurasia au urmat jocul prin Beringia, un pod de uscat care lega Siberia de Alaska actuală în timpul erei glaciare și apoi s-au răspândit spre sud în întreaga Americi. Este posibil ca această migrație să fi început încă de acum 30.000 de ani [2] și să fi continuat până în urmă cu aproximativ 10.000 de ani, când podul de uscat a fost scufundat de creșterea nivelului mării cauzată de topirea ghețarilor. [3] Acești primi locuitori, numiți paleo-indieni, s-au diversificat curând în sute de așezări și țări distincte din punct de vedere cultural.</p>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/1200x/a3/03/2f/a3032f967dc74559fa9a27b94c670625.jpg" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            <figcaption class="caption">Înainte de a intra în America, primii oameni au trăit timp de mii de ani izolați pe imensul pod de uscat care acoperea strâmtoarea Bering – o regiune care este acum scufundată. © Anonymous</figcaption>
+                <style>
+                    .image-container {
+                        text-align: center;
+                    }
+                    .image-container img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    .photo-container {
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+                    .caption {
+                        font-style: italic;
+                        color: gray;
+                        font-size: 14px;
+                    }
+                </style>
+        </div>
+        <div id="fullscreen-container" onclick="closeFullScreen()">
+            <img id="fullscreen-image">
+        </div>
+        <style>
+            .clickable-image {
+                cursor: pointer;
+                border-radius: 5px;
+                transition: transform 0.3s;
+            }
+
+            .clickable-image:hover {
+                transform: scale(1.05);
+            }
+
+            #fullscreen-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            #fullscreen-image {
+                max-width: 90%;
+                max-height: 90%;
+                border-radius: 10px;
+            }
+        </style>
+
+        <script>
+            function openFullScreen(img) {
+                let fullScreenDiv = document.getElementById("fullscreen-container");
+                let fullScreenImg = document.getElementById("fullscreen-image");
+
+                fullScreenImg.src = img.src;
+                fullScreenDiv.style.display = "flex";
+            }
+
+            function closeFullScreen() {
+                document.getElementById("fullscreen-container").style.display = "none";
+            }
+        </script>
+        <p>Această epocă pre-columbiană încorporează toate perioadele din istoria Americilor înainte de apariția influențelor europene pe continentele americane, de la așezarea inițială din perioada paleoliticului superior până la colonizarea europeană în perioada modernă timpurie. În timp ce termenul se referă din punct de vedere tehnic la epoca de dinaintea călătoriei lui Cristofor Columb în 1492, în practică termenul include de obicei istoria culturilor indigene americane până când acestea au fost cucerite sau influențate semnificativ de europeni, chiar dacă acest lucru s-a întâmplat la decenii sau secole după debarcarea inițială a lui Columb. [4]</p>
+        <p><b>Paleo-indienii</b></p>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/1200x/e1/16/e4/e116e4e9f9e0f8cd55213f885794d6d4.jpg" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            <figcaption class="caption">Paleo-indienii vânează zimbri în America de Nord. © HistoryMaps</figcaption>
+        </div>
+        <p>Până în 10.000 î.Hr., oamenii erau relativ bine stabiliți în toată America de Nord. Inițial, paleo-indienii vânau megafauna din Epoca de gheață precum mamuții, dar pe măsură ce au început să dispară, oamenii s-au orientat spre zimbri ca sursă de hrană. Odată cu trecerea timpului, hrana pentru fructe de pădure și semințe a devenit o alternativă importantă la vânătoare. Paleo-indienii din centrul Mexicului au fost primii din America care au cultivat, începând să planteze porumb, fasole și dovleac în jurul anului 8.000 î.Hr. În cele din urmă, cunoștințele au început să se răspândească spre nord. Până în 3.000 î.Hr., porumbul era cultivat în văile Arizona și New Mexico, urmat de sistemele primitive de irigare și de satele timpurii din Hohokam. [5]</p>
+        <p>Una dintre culturile anterioare din Statele Unite de astăzi a fost cultura Clovis, care sunt identificate în primul rând prin utilizarea vârfurilor de suliță canelate numite vârful Clovis. Între 9.100 și 8.850 î.Hr., cultura s-a întins pe o mare parte a Americii de Nord și a apărut și în America de Sud. Artefactele din această cultură au fost excavate pentru prima dată în 1932 lângă Clovis, New Mexico. Cultura Folsom a fost similară, dar este marcată de utilizarea punctului Folsom.</p>
+        <p>O migrație ulterioară identificată de lingviști, antropologi și arheologi a avut loc în jurul anului 8.000 î.Hr. Acestea au inclus popoare vorbitoare de na-dene, care au ajuns în nord-vestul Pacificului în 5.000 î.Hr. [6] De acolo, au migrat de-a lungul coastei Pacificului și în interior și și-au construit locuințe mari multifamiliale în satele lor, care erau folosite doar sezonier vara pentru vânătoare și pescuit, iar iarna pentru a aduna provizii de hrană. [7] Un alt grup, oamenii tradiției Oshara, care au trăit între 5.500 î.Hr și 600 î.Hr., făceau parte din sud-vestul arhaic.</p>
+        <p><b>Constructorii de movile</b></p>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/1200x/09/d3/4f/09d34fc13ba05c448a1dc717b7088547.jpg" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            <figcaption class="caption">Cahokia © Image belongs to the respective owner(s).</figcaption>
+        </div>
+        <p>Adena a început să construiască movile mari de pământ în jurul anului 600 î.Hr. Ei sunt cei mai timpurii oameni cunoscuți care au fost constructori de movile, cu toate acestea, există movile în Statele Unite care preced această cultură. Watson Brake este un complex de 11 movile din Louisiana, care datează din 3.500 î.Hr., iar Poverty Point din apropiere, construit de cultura Poverty Point, este un complex de terasamente care datează din 1.700 î.Hr. Aceste movile au servit probabil un scop religios.</p>
+        <p>Adenanii au fost absorbiți de tradiția Hopewell, un popor puternic care făcea comerț cu unelte și bunuri pe un teritoriu larg. Ei au continuat tradiția Adena de a construi movile, cu rămășițe de câteva mii încă în existență în centrul fostului lor teritoriu din sudul Ohio. Hopewell a inițiat un sistem de tranzacționare numit Hopewell Exchange System, care, în cea mai mare măsură, mergea din sud-estul actual până în partea canadiană a lacului Ontario. [8] Până în 500 d.Hr., Hopewellienii dispăruseră și ei, absorbiți în cultura mai mare din Mississippi.</p>
+        <p>Mississippienii erau un grup larg de triburi. Cel mai important oraș al lor a fost Cahokia, lângă actualul St. Louis, Missouri. La apogeul său în secolul al XII-lea, orașul avea o populație estimată la 20.000, mai mare decât populația Londrei la acea vreme. Întregul oraș era centrat în jurul unei movile care avea o înălțime de 100 de picioare (30 m). Cahokia, la fel ca multe alte orașe și sate ale vremii, depindea de vânătoare, hrană, comerț și agricultură și a dezvoltat un sistem de clasă cu sclavi și sacrificii umane, care a fost influențat de societățile din sud, precum mayașii. [9]</p>
+        <p><b>Popoarele indigene din nord-vestul Pacificului</b></p>
+        <div class="image-container">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Three_young_chinook_men.PNG/1200px-Three_young_chinook_men.PNG" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            <figcaption class="caption">Trei tineri Chinook © George Catlin</figcaption>
+        </div>
+        <p>Popoarele indigene din nord-vestul Pacificului au fost probabil cei mai înstăriți nativi americani. Acolo s-au dezvoltat multe grupuri culturale și entități politice distincte, dar toate împărtășeau anumite credințe, tradiții și practici, cum ar fi centralitatea somonului ca resursă și simbol spiritual. Satele permanente au început să se dezvolte în această regiune încă din anul 1.000 î.Hr., iar aceste comunități au fost sărbătorite prin sărbătoarea de dăruire a potlatchului. Aceste adunări erau de obicei organizate pentru a comemora evenimente speciale, cum ar fi ridicarea unui totem sau celebrarea unui nou șef.</p>
+        <p><b>Puebloani ancestrali</b></p>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/1200x/1d/02/41/1d0241924151e6a29fc2697c31e78fa2.jpg" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            <figcaption class="caption">Palatul Cliff © Anonymous</figcaption>
+        </div>
+        <p>Istoria puebloanilor ancestrali, cunoscută și sub numele de Anasazi, reprezintă un capitol esențial în istoria culturală și ecologică timpurie a ceea ce este acum sud-vestul Statelor Unite. Aceste comunități străvechi de nativi americani au prosperat în regiunea Four Corners – cuprinzând părți din Utah, Arizona, New Mexico și Colorado actuale – între aproximativ 700 și 1300 e.n. Dezvoltarea, adaptarea și eventuala migrație a acestora oferă perspective cheie asupra dinamicii de mediu și sociale care au modelat societățile timpurii din America de Nord.</p>
+        <p><i>Origini și dezvoltare</i></p>
+        <p>Puebloanii ancestrali au apărut din tradițiile anterioare, inclusiv culturile Oshara și Picosa, și au stabilit o societate complexă de-a lungul secolelor. Populația lor a crescut rapid în perioada Pueblo I și II (700–1130 d.Hr.) datorită precipitațiilor consistente care susțin agricultura și inovații precum ceramica, depozitarea alimentelor și irigarea. Aceste progrese au permis creșterea comunităților și au încurajat o „Epocă de Aur” între 900 și 1150 d.Hr., caracterizată de realizări arhitecturale, cum ar fi pueblos și kivas, și o rețea comercială extinsă.</p>
+        <p> În sud-vest, anasazi au început să construiască pueblo-uri din piatră și chirpici în jurul anului 900 î.Hr. [10] Aceste structuri asemănătoare apartamentelor au fost adesea construite în stânci, așa cum se vede în Palatul Cliff din Mesa Verde. Unele au crescut până la dimensiunea orașelor, Pueblo Bonito de-a lungul râului Chaco din New Mexico constând cândva din 800 de camere. [9]</p>
+        <p> Capacitatea ancestralilor puebloani de a se adapta la mediul lor prin irigare, terasare și conservarea apei a demonstrat practici agricole sofisticate. Ei au dezvoltat, de asemenea, cunoștințe cerești complicate, reflectate în alinierea structurilor lor ceremoniale cu evenimentele astronomice.</p>
+        <p><i>Provocări și migrație</i></p>
+        <p>Din secolul al XII-lea, au apărut provocări semnificative, inclusiv secete prelungite, defrișări și degradarea solului, exacerbate de schimbările climatice din timpul Marii Secete (1130–1350). Aceste condiții au condus la eșecuri agricole, stres populațional și conflicte sporite, posibil agravate de sosirea unor noi grupuri, cum ar fi popoarele vorbitoare de numic și Athabaskani (mai târziu Navajo și Apache). Unele dovezi sugerează, de asemenea, un război intern, inclusiv posibile cazuri de canibalism și conflicte etnice, deoarece comunitățile concurau pentru resursele în scădere.</p>
+        <p>Pe măsură ce condițiile s-au înrăutățit, mulți puebloani au început să-și demonteze structurile, abandonând situri ținute de mult timp precum Chaco Canyon și Mesa Verde. Aceste migrații nu au fost o dispariție, ci mai degrabă o deplasare către zone cu surse de apă mai sigure și condiții agricole. Descendenții lor s-au integrat în comunitățile moderne Pueblo, cum ar fi cele din New Mexico și Arizona, păstrând aspecte ale moștenirii lor culturale.</p>
+    </div>
+</body>
+</html>
