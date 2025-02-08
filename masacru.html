@@ -125,7 +125,40 @@
             .no-link-style:hover {
                 color: gray;
             }
+            .note {
+            display: none;
+            background: #fff;
+            color: #000;
+            padding: 5px;
+            border: 1px solid #ccc;
+            position:absolute;
+            }
         </style>
     </div>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+        function showNote(id) {
+            document.getElementById(id).style.display = "inline"; 
+        }
+
+        function hideNote(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            let note = document.getElementById("note1");
+    
+            document.getElementById("sup1").addEventListener("mousemove", function (event) {
+                note.style.display = "block";
+                note.style.left = event.pageX + 10 + "px";
+                note.style.top = event.pageY + 10 + "px";
+            });
+    
+            document.getElementById("sup1").addEventListener("mouseleave", function () {
+                note.style.display = "none";
+            });
+        });
+    </script>
 </body>
 </html>
