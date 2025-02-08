@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenimente semnificative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#fff;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+            align-self: center;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); } /* Moves text up */
+        100% { transform: translateY(0px); }
+        }
+        h2 {
+            color: #333;
+        }
+        .timeline, .tribes {
+            padding-left: 20px;
+        }
+        .timeline li, .tribes li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <section style="
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amerikanska_folk%2C_Nordisk_familjebok.jpg/1280px-Amerikanska_folk%2C_Nordisk_familjebok.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+">
+    <h1>Evenimente</h1>
+</section>
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <button onclick="redirectTo('index.html')">Acasă</button>
+            <button onclick="redirectTo('evenimente.html')">Evenimente</button>
+            <button onclick="redirectTo('triburi.html')">Triburi</button>
+            <button onclick="redirectTo('legende.html')">Legende</button>
+            <button onclick="redirectTo('galerie.html')">Galerie</button>
+            <button onclick="redirectTo('Bibliografie.html')">Bibliografie</button>
+        </nav>
+    </div>
+    
+    <style>
+        .header {
+            background: #463216;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu button {
+            background: #8b7454;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background: #8d8883;
+        }
+    </style>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <div class="container">
+        <h2>Evenimentele semnificative din istoria amerindienilor și a colonizării</h2>
+        <ul class="timeline">
+            <li><strong>1492:</strong> <a href="columb.html" class="info">Cristofor Columb ajunge pe tărâmul Americilor.</a></li>
+            <li><strong>1607:</strong> <a href="jamestown.html" class="info">Este înfăptuită prima așezare engleză, Jamestown.</a></li>
+            <li><strong>1830:</strong> <a href="drumul-lacrimilor.html" class="info">Prin "Indian Removal Act" este asigurată expulzarea populațiilor băstinașe.</a></li>
+            <li><strong>1875:</strong> <a href="littlebighorn.html" class="info">Are loc bătălia de la Little Bighorn.</a></li>
+            <li><strong>1890:</strong> <a href="masacru.html" class="info">Are loc masacrul de la Wounded Knee.</a></li>
+        </ul>
+        <style>
+            .info {
+                text-decoration: none;
+                color: rgb(143, 78, 0);
+                cursor: pointer;
+            }
+            .info:hover {
+                color:#8d8883;
+            }
+        </style>
+    </div>
+</body>
+</html>
