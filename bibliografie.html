@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triburi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#fff;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); } /* Moves text up */
+        100% { transform: translateY(0px); }
+        }
+        h2 {
+            color: #333;
+        }
+        .timeline, .triburi {
+            padding-left: 20px;
+        }
+        .timeline li, .triburi li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <section style="
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amerikanska_folk%2C_Nordisk_familjebok.jpg/1280px-Amerikanska_folk%2C_Nordisk_familjebok.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+">
+    <h1>Bibliografie</h1>
+</section>
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <button onclick="redirectTo('index.html')">Acasă</button>
+            <button onclick="redirectTo('evenimente.html')">Evenimente</button>
+            <button onclick="redirectTo('triburi.html')">Triburi</button>
+            <button onclick="redirectTo('legende.html')">Legende</button>
+            <button onclick="redirectTo('galerie.html')">Galerie</button>
+            <button onclick="redirectTo('Bibliografie.html')">Bibliografie</button>
+        </nav>
+    </div>
+    
+    <style>
+        .header {
+            background: #463216;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu button {
+            background: #8b7454;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background: #8d8883;
+        }
+    </style>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <div class="container">
+            <p>1. Baulenas Pubill, Ariadna, <i>Civilizațiile precolumbiene. Mayașii, aztecii și incașii</i>, București, Editura Litera, 2023.</p>
+            <p>2. Binet, Laurent,  <i>Civilizatii</i>, Editura Pandora M, 2021.</p>
+            <p>3. <i>Descopera istoria. Civilizatiile precolumbiene. Mayasii, aztecii si incasii. Vol. 18.</i>, Editura Litera, 2023.</p>
+            <p>4. Haughton, Brian, <i>Istoria secreta. Civilizatii pierdute si mistere stravechi</i>, Editura Polirom, 2009</p>
+            <p>5. Leconte, Eric, <i>Uimitoarea civilizatie azteca</i>, Editura Prietenii Cartii, 1998.</p>
+            <p>6. Lehmann, Henri; Soustelle, Jacques, <i>Civilizatiile precolumbiene. Aztecii. Mayasii. Incasii</i>, Editura Humanitas , 1995.</p>
+            <p>7. Mehedinti, S., <i>Civilizatie si cultura. Concepte, definitii, rezonante</i>, Editura Trei, 1999.</p>
+            <p>8. <hyperlink>https://inbors.com/curiozitati-despre-civilizatia-maya/</hyperlink></p>
+            <p>9. <hyperlink>https://www.historia.ro/sectiune/general/articol/civilizatia-maya-la-apogeu</hyperlink></p>
+            <p>10. <hyperlink>https://www.britannica.com/event/Battle-of-the-Little-Bighorn</hyperlink></p>
+            <p>11. <hyperlink>https://www.descopera.ro/cultura/9384505-drumul-lacrimilor-o-pagina-din-istoria-amerindienilor</hyperlink></p>
+            <p>12. <hyperlink>https://www.britannica.com/event/Wounded-Knee-Massacre</hyperlink></p>
+    </div>
+</body>
+</html>
