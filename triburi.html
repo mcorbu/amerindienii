@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triburi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#fff;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); } /* Moves text up */
+        100% { transform: translateY(0px); }
+        }
+        h2 {
+            color: #333;
+        }
+        .timeline, .triburi {
+            padding-left: 20px;
+        }
+        .timeline li, .triburi li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <section style="
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amerikanska_folk%2C_Nordisk_familjebok.jpg/1280px-Amerikanska_folk%2C_Nordisk_familjebok.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+">
+    <h1>Triburi</h1>
+</section>
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <button onclick="redirectTo('index.html')">Acasă</button>
+            <button onclick="redirectTo('evenimente.html')">Evenimente</button>
+            <button onclick="redirectTo('triburi.html')">Triburi</button>
+            <button onclick="redirectTo('legende.html')">Legende</button>
+            <button onclick="redirectTo('galerie.html')">Galerie</button>
+            <button onclick="redirectTo('Bibliografie.html')">Bibliografie</button>
+        </nav>
+    </div>
+    
+    <style>
+        .header {
+            background: #463216;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu button {
+            background: #8b7454;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background: #8d8883;
+        }
+    </style>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <div class="container">
+        <p>Triburile indigene din Americi sunt numeroase. Totuși, aici sunt evidențiate câteva dintre ele, considerate semnificative și a căror moștenire dăinuie peste veacuri.</p>
+        <ul class="triburi">
+            <H2>AMERICA DE NORD</H2>
+            <p>1. Triburile din Marile Câmpii (Great Plains)<br>
+                Aceste triburi erau nomade și vânători de bizoni, cunoscuți pentru abilitățile lor călare.</p>
+            <li><section id="0">Sioux - Lakota, Nakota și Dakota; mari războinici, cu lideri celebri precum Sitting Bull și Crazy Horse.</section></li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337587567188643960/fullregaliasioux.png?ex=67a7fcff&is=67a6ab7f&hm=9277db3f9c12588633b6926cdc82da7fee4cb398a761c9601ee3ed60ca23215b&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="1"></section>Cheyenne - Aliați ai Sioux, cunoscuți pentru Bătălia de la Little Bighorn.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337587805873770537/Southern_Cheyenne-171d41f9c20148438d777de515922535.png?ex=67a7fd38&is=67a6abb8&hm=cb998248ee1dc13326789580e777558937173ca0bbd96ba153f8b50cd624273f&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                    <style>
+                        .image-container {
+                            text-align: center;
+                        }
+                        .image-container img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        .photo-container {
+                            text-align: center;
+                            margin: 20px 0;
+                        }
+                    </style>
+            </div>
+            <div id="fullscreen-container" onclick="closeFullScreen()">
+                <img id="fullscreen-image">
+                <style>
+                    .clickable-image {
+                cursor: pointer;
+                border-radius: 5px;
+                transition: transform 0.3s;
+            }
+
+            .clickable-image:hover {
+                transform: scale(1.05);
+            }
+
+            #fullscreen-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            #fullscreen-image {
+                max-width: 90%;
+                max-height: 90%;
+                border-radius: 10px;
+            }
+            </style>
+            </div>
+            <li><section id="2"></section>Comanche - Stăpânii călăriei, au rezistat colonizării americane.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337588001097912330/Three-mounted-Comanche-warriors1892_LOAColor.png?ex=67a7fd66&is=67a6abe6&hm=e77d8cb0ada3bdd9e5861b094f726e76294c05c7e2679231e119ed2eccb9d7f8&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="3"></section>Blackfoot - Mari vânători și războinici din Canada și SUA.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337588282913198221/SO24-DNA-Blackfoot-Header.png?ex=67a7fda9&is=67a6ac29&hm=9a18c79b14ddc6c76c719989ad1bc7eca4e145bdb72d7b310f335d6a752f9f61&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="4"></section>Crow Tribe - Inițial aliați ai amerindienilor, apoi ai SUA.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337588506721128539/Crow-Tribe-History-Culture-and-Facts.png?ex=67a7fddf&is=67a6ac5f&hm=4f808bed58429e76c371e3e2e697b50282b8c34cfa10f9a5901652f2367cd1da&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <p>2. Triburile din Nord-Est și regiunea Marilor Lacuri<br>
+                Aceste triburi erau sedentare, trăind în sate și practicând agricultura.</p>
+            <li><section id="5"></section>Irochezii – Confederația celor șase națiuni: Mohawk, Oneida, Onondaga, Cayuga, Seneca, Tuscarora.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337588989829320714/Iroquoisby-WilliamDrennan1914-700.png?ex=67a7fe52&is=67a6acd2&hm=9de405aca6b18af015b0d1807fe036b338ee255e2191c7cbac760852712d8103&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="6"></section>Huron – Mari comercianți, distruși de conflictele cu europenii.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337589507465412700/indian-camp-lake-huron-a.png?ex=67a7fecd&is=67a6ad4d&hm=1b56bcbbd11958dd503a6b21d9ee40a0a79341c8f2772591f0b82de9111f5881&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="7"></section>Ojibwe - Unul dintre cele mai mari triburi, practicanți ai spiritualității Midewiwin.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337589806443528382/bad_river_ojibwe_groupshot_4.png?ex=67a7ff15&is=67a6ad95&hm=b2a76baf257de1c95d01b2f43a1c6979b6d080207fb2c6708d581956ea814dbd&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="8"></section>Algonquin – Vânători și pescari din Canada.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337589986647605379/cropped-day-1_-colony_meatcacheii.png?ex=67a7ff40&is=67a6adc0&hm=7a1fbab1b8da958cef0079ceef0ae3ce8a2ad8d211d6722700e485589ffba2e5&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <p>3. Triburile din Sud-Estul Americii de Nord <br>
+                Aceste triburi au fost printre cele mai avansate și au avut contacte timpurii cu europenii.</p>
+            <li><section id="9"></section>Cherokee - Trib civilizat cu alfabet propriu, deportat pe „Drumul Lacrimilor”.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337590199248490576/AfoCHOPUam6l9BzEbclHqpwIvl1l54UbNvUk9gQzMNIiBCGEcdU6GKZsC2fetAohHGYhRy-SQZKLciOUopeOdjKqox1V-vIxxHMocEatKo9ptTRDZvEINVr6p1SU6CzLJzWxNFrtDUtcId_ToMZYTqnzmjaZeo_E.png?ex=67a7ff72&is=67a6adf2&hm=ebad3b87aaf12d70e6c8509250cfe24081c9710fd0f5f113b29d197ff7ece3c5&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="10"></section>Chocktaw - Fermieri avansați, forțați să migreze în Oklahoma.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337590392266424371/Louisiana_Indians_Walking_Along_a_Bayou_-_Alfred_Boisseau_28New_Orleans_Mus_of_Art_56.png?ex=67a7ffa0&is=67a6ae20&hm=1b906ee55935c8e18cee1f29850e26a5cfc4944ce16878c07e75a1973cd6cfda&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="11"></section>Chickasaw - Războinici puternici, aliați ai britanicilor în Războiul de Independență.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337590591332024452/event-1690-trade-relationship-grows-thumb_1920x.png?ex=67a7ffd0&is=67a6ae50&hm=7a4a0197519d4a0ab40a46106fe0fcd91644e96d1661740645522dfc162329d3&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="12"></section>Seminole - Trib format din mai multe grupuri fugite, au luptat în Războaiele Seminole.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337590854759612426/2002-166-190.png?ex=67a8000f&is=67a6ae8f&hm=18b8bda9844e4c67728f269de855fc9e3482f079fe08298562a42acf9b6a1294&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <p>4. Triburile din Sud-Vest <br>
+                Aceste triburi trăiau în climate aride, fiind fie sedentare, fie semi-nomade.</p>
+            <li><section id="14"></section>Navajo - Cel mai mare trib din SUA astăzi, renumit pentru țesături și codurile din Al Doilea Război Mondial.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337591163384758362/Navajo20family20sitting20on20ground20by20tree-20Monument20Valley20196027s.png?ex=67a80058&is=67a6aed8&hm=64c143ab1d904d09ab08ef2ba44d8d057da9fe0e8bab833972c03a7794ea9125&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="15"></section>Apache - Mari războinici și strategi, lideri celebri: Geronimo, Cochise.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337591278497697966/3HKMLAA5EJH33HOVGO2QTLAF7I.png?ex=67a80074&is=67a6aef4&hm=b5c20c5174ef3585a8d366e46f5a9347a5e11ae451437e44325345a38302e874&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="16"></section>Hopi - Agricultori și ceramiști pricepuți, locuiau în sate pueblo.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337591649659916300/640px-Hopi_Harvest_Dance_NBY_9842.png?ex=67a800cc&is=67a6af4c&hm=47bfff470254741aeb758054aeb09eecee77a907f44cec5f3bd518f6a8c02c98&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="17"></section>Zuni - Cultura lor datează de peste 2.000 de ani, faimoși pentru bijuteriile lor.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337591918476922941/3c02041v.png?ex=67a8010c&is=67a6af8c&hm=56347b86b288e7083948dbd867bd5c71a540c09865dadf3ff0811a41769d94ed&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <p>5. Triburile de pe Coasta de Nord-Vest și Pacific <br>
+                Cunoscuți pentru meșteșugurile lor, arta și pescuitul de somon.
+                </p>
+            <li><section id="18"></section>Tlinglit - Pescari, sculptori și comercianți din Alaska.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337592247927181353/dalton_chilkats.png?ex=67a8015b&is=67a6afdb&hm=1f925e75c359b630d1dff5a936ec8a9aab5287af31a6d532da54e9280415a2d0&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="19"></section>Haida - Meșteșugari faimoși pentru canoe și totemuri.</li>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337592485110874152/132322-004-B211B639.png?ex=67a80193&is=67a6b013&hm=fded707094929291ec7df36ddf50b8a6a2b78f602d68233fe3fce95c124912dc&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li><section id="13"><section>Chinook - Comercianți puternici de-a lungul râului Columbia.</li>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337592792112955484/Chinook-Lodge-engraving-Richard-W-Dodson-drawing-1844.png?ex=67a801dc&is=67a6b05c&hm=3c83755c56208a41b3bab9238038317f8b818f294420737345b030ae3c229300&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+                <p>
+                    6. Triburile din California și Marele Bazin <br>
+Aceste triburi trăiau în climate dure, bazându-se pe cules și vânătoare.
+                </p>
+            <li>Shoshone - Trib din care făcea parte Sacagawea, ghidul expediției Lewis și Clark.</li><section id="20"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337592943480934460/twotreaties4.png?ex=67a80201&is=67a6b081&hm=1a8caeeb14c5acba993f5d17071d02f87acf1fa39d61931ac2ec8e46e9b2f81b&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Paiute – Cunoscuți pentru utilizarea plantelor medicinale.</li><section id="21"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337593093544874076/Bishop_paiute_women_1940.png?ex=67a80224&is=67a6b0a4&hm=e1910673abe3429e13578d37fcf9b0b8123e76eeaa1f357314631ce9074fdc42&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Pomo - Artiști renumiți pentru împletituri și coșuri decorative.</li><section id="22"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337593255583416362/pomo_4.png?ex=67a8024b&is=67a6b0cb&hm=3200544724baa80ec87f812c8199980c8bcf65df98d574aade16ef1792082809&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <H2>AMERICA CENTRALĂ</H2>
+            <li>Mayașii - Civilizație avansată cu orașe mari (Tikal, Chichen Itza). 
+                Cunoscători ai astronomiei, matematicii și scrierii hieroglifice.</li><section id="23"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337593396964884480/Mayan-Tribes-300x204.png?ex=67a8026d&is=67a6b0ed&hm=758f3063ba158cc58613c040b74eb81c006b93c10f215ac28aede7693e4c25da&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Aztecii - Imperiu militar puternic cu capitala la Tenochtitlán (actualul Mexico City). 
+                Practicau sacrificii umane și aveau o cultură rigidă social.</li><section id="24"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337593649864904724/the-aztec-emperor-montezuma-ii--1466-1520--in-chapultepec--oil-on-canvas-by-daniel-del-valle--1895--mexico--16th-century-165547825-5a878675c06471003768cad0.png?ex=67a802a9&is=67a6b129&hm=d3a112c8f6dfc8c108ade2ea1dfaf818cbb696d76b98ba30590f7dfb0ebf555c&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Toltecii - Cultura lor a influențat puternic aztecii. 
+                Faimoși pentru orașul Tula și sculpturile lor impresionante.</li><section id="25"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337594051477639238/Columns-Toltec-warriors-Tula-Mexico.png?ex=67a80309&is=67a6b189&hm=5fae0ae84365326685e48743e1deac22c61937305c3b0540ab66adbd8aa665a9&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Lenca - Trib războinic, faimos pentru liderul Lempira.
+            </li><section id="26"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337594391539482624/220px-Lempira.png?ex=67a8035a&is=67a6b1da&hm=c3a9d1bb51734d55d0b917eacc5a1834d953c9e23c878c3d12223a2a3c36b4f6&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Bribri - Trib indigen care și-au păstrat cultura și limba până astăzi.</li><section id="27"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337594535538327614/bribri-people.png?ex=67a8037c&is=67a6b1fc&hm=558e07750819d827af826db2845281ca039e56b0168cbfc083a2bfa09b5d7c94&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Cabecar - Trib indigen care și-au păstrat cultura și limba până astăzi.</li><section id="28"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337594697748578304/maleku-indians.png?ex=67a803a3&is=67a6b223&hm=2a197eeef8293b3d7335422e7dbe7b4bd7cf65af60fbf3f59488937872028a45&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <h2>AMERICA DE SUD</h2>
+            <li>Incașii - Cel mai mare imperiu precolumbian, capitala la Cuzco. 
+                Inginerie avansată (Machu Picchu, drumuri, terase agricole).</li><section id="29"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337595115753177200/inca-pachacutec-qoya-machu-picchu.png?ex=67a80406&is=67a6b286&hm=5f30261c2d0d19101a67830db10437613e1a7914b6f6a9ffb32924a154abdab9&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Mapuche - Războinici care au rezistat cuceririi spaniole timp de secole.</li><section id="30"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337595297026539590/800px-mapuche_machis_14258791346125339581.png?ex=67a80432&is=67a6b2b2&hm=00dbf977cb1ff1b0895a032ba30722d5975bd934f2d64c0827c8d59a7442b5a4&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Guarani - Cultura lor a fost păstrată în mare parte datorită misiunilor iezuite. 
+                Limba guarani este oficială în Paraguay.</li><section id="31"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337595523045003334/2C96764000000578-3233710-image-a-23_1442824032777.png?ex=67a80468&is=67a6b2e8&hm=476aac94efad74bd5873ad8db1eca523d1ceca920f620171ca22349e0b0ab295&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Yanomami - Trib din pădurea amazoniană, trăind în comunități mari numite „shabonos”.</li><section id="32"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337595772652228658/659cb343bc001_219-foto1.png?ex=67a804a3&is=67a6b323&hm=aec1f9c6c748beff401d7b00ae610ea5f89792ff46bfc8bbbc1f9437c3b636fa&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+            <li>Aymara - Agricultori de mare altitudine în Anzi. 
+                Cultura lor este încă vibrantă, cu peste 2 milioane de vorbitori de aymara.</li><section id="33"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337596196704751708/Aymara_jujuy_28sephia29_1870.png?ex=67a80508&is=67a6b388&hm=24d6b54cf93d00c2825b223107e8f148f902ff87abc58a771c317a30303bbe02&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Quechua - Descendenții direcți ai incașilor. 
+                Limba quechua este vorbită de milioane de oameni astăzi.</li><section id="34"></section>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337596408940986409/646593426-2019-sep-05-10-33-55-000000-44140226845_e782d6c061_k_cusco_Photo-Tim-Borny-1024x512.png?ex=67a8053b&is=67a6b3bb&hm=9e4fc5dec120192a12f61dfdb1b535d7ae6d418610752db37ed03d63ac9a4dc8&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+                </div>
+            <li>Tupi - Triburi indigene de pe coasta braziliană care au influențat cultura braziliană.</li><section id="35"></section>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337596706191179808/pngtree-pataxo-indigenous-games-tupi-tupinamba-xavante-photo-image_36441862.png?ex=67a80582&is=67a6b402&hm=021f61199063a2e87839ae4a640791684139bd0c73fdedfb9c383289d6ce8373&" width="600" height="400" class="clickable-image" onclick="openFullScreen(this)">
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
