@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenimente semnificative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#fff;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+            align-self: center;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); } /* Moves text up */
+        100% { transform: translateY(0px); }
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+    <section style="
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amerikanska_folk%2C_Nordisk_familjebok.jpg/1280px-Amerikanska_folk%2C_Nordisk_familjebok.jpg') center/cover no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+">
+    <h1>Galerie</h1>
+</section>
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <button onclick="redirectTo('index.html')">Acasă</button>
+            <button onclick="redirectTo('evenimente.html')">Evenimente</button>
+            <button onclick="redirectTo('triburi.html')">Triburi</button>
+            <button onclick="redirectTo('legende.html')">Legende</button>
+            <button onclick="redirectTo('galerie.html')">Galerie</button>
+            <button onclick="redirectTo('bibliografie.html')">Bibliografie</button>
+        </nav>
+    </div>
+    
+    <style>
+        .header {
+            background: #463216;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu button {
+            background: #8b7454;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background: #8d8883;
+        }
+    </style>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+            function openFullScreen(img) {
+                let fullScreenDiv = document.getElementById("fullscreen-container");
+                let fullScreenImg = document.getElementById("fullscreen-image");
+                let fullScreenDesc = document.getElementById("fullscreen-description");
+
+                fullScreenImg.src = img.src;
+                fullScreenDiv.style.display = "flex";
+                fullScreenDesc.innerText = img.getAttribute("data-description") || "Nicio descriere disponibilă.";
+            }
+            function closeFullScreen() {
+                document.getElementById("fullscreen-container").style.display = "none";
+            }
+    </script>
+
+    <div class="container">
+        <div class="gallery-flex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coronado-Remington.jpg/300px-Coronado-Remington.jpg" class="clickable-image" onclick="openFullScreen(this)" data-description="În sec. XVI, conchistadorul Coronado începe căutarea aurului în sud-vestul Statelor Unite de astăzi.">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337597253262512168/640px-U.png?ex=67a80604&is=67a6b484&hm=ccf565a73402a109a339aa7d9ffec2f7f38e0400a2ebd9d3fcdc786fafb3355f&" class="clickable-image" onclick="openFullScreen(this)" data-description="Războaiele amerindienilor cu armata americană, 1876">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337597361945313322/IndiansonthePrairie.png?ex=67a8061e&is=67a6b49e&hm=9f6e9ba154b92168608db66da93e97f38a1ce52445e4c271dc9fc9da82a98381&" class="clickable-image" onclick="openFullScreen(this)" data-description="'Indians on the Prairie' - Indieni pe prerie">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337597618519543899/357a5053149785.png?ex=67a8065b&is=67a6b4db&hm=d26d66f460dfd695dbd73ef5c75ff32395a5b015d09e1c7e52a041fd2538b1ff&" class="clickable-image" onclick="openFullScreen(this)" data-description="Femei amerindiene cultivând porumb">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337597705576251463/6762b74ca86ce7001e7ded0c.png?ex=67a80670&is=67a6b4f0&hm=105be8be1f2c83e0072e4a62dee4f5b905ac7aa16a712f055a0dddd1a6bc744d&" class="clickable-image" onclick="openFullScreen(this)" data-description="Nativi ai tribului Cherokee în jurul focului.">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337597873436622949/native-american-ceremony-granger.png?ex=67a80698&is=67a6b518&hm=01af0226d8c1ac015cca30dd8a159496c45ccfddb4e6c831eb78f014fba3e99b&" class="clickable-image" onclick="openFullScreen(this)" data-description="Ceremonie nativ-americană.">
+            <img src= "https://cdn.discordapp.com/attachments/1288199856460140616/1337598688805261333/th.png?ex=67a8075a&is=67a6b5da&hm=3f1a7670348d779da618759187f96cd270406b1ea815f7c34112959294087ddd&" class="clickable-image" onclick="openFullScreen(this)" data-description="Mamă și bebelușul ei.">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337598636359553116/42-22103062_1024x1024.png?ex=67a8074e&is=67a6b5ce&hm=208eede78ac4625ac16ab5e51d792d0eb3b9b0fdcb6b4a271ac65ee0544e9641&" class="clickable-image" onclick="openFullScreen(this)" data-description="Familie de amerindieni.">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337599080448262194/https3A2F2Fep01.png?ex=67a807b8&is=67a6b638&hm=c7828e7e33d20830bd785744ff651b7d03ae695eaf364a58faca6f0c390b0138&" class="clickable-image" onclick="openFullScreen(this)" data-description="'Primer homenaje a Colón' (Garnelo) - Primul omagiu adus lui Columb">
+            <img src="https://cdn.discordapp.com/attachments/1288199856460140616/1337598108003205231/PequotWar.png?ex=67a806d0&is=67a6b550&hm=4f3db465f4b3b9e976a771d2ee2f6439b84d8c2efe1fed7050e45bc3e837f105&" class="clickable-image" onclick="openFullScreen(this)" data-description="Război - tribul Pequot">
+        </div>
+        <div id="fullscreen-container" onclick="closeFullScreen()">
+            <img id="fullscreen-image">
+            <p id="fullscreen-description"></p>
+        </div>
+        <style>
+
+            .gallery-flex {
+                display: flex;
+                flex-wrap: wrap; /* Allows images to move to the next line */
+                justify-content: center;
+                gap: 10px;
+            }
+        
+            .gallery-flex img {
+                width: calc(33.33% - 10px); /* 3 images per row */
+                height: auto;
+                border-radius: 5px;
+                transition: transform 0.3s;
+            }
+        
+            .gallery-flex img:hover {
+                transform: scale(1.05);
+            }
+        
+            /* Responsive for smaller screens */
+            @media (max-width: 600px) {
+                .gallery-flex img {
+                    width: calc(50% - 10px); /* 2 images per row on small screens */
+                }
+            }
+            .clickable-image {
+                cursor: pointer;
+                border-radius: 5px;
+                transition: transform 0.3s;
+            }
+
+            #fullscreen-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            #fullscreen-image {
+                width: 70vw; /* Make the image take up most of the screen width */
+                height: auto; /* Maintain aspect ratio */
+                max-width: none; /* Remove max-width restriction */
+                max-height: none; /* Remove max-height restriction */
+                border-radius: 10px;
+                object-fit: contain;
+            }
+
+            #fullscreen-description {
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                margin-top: 10px;
+                max-width: 80%;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                border-radius: 5px;
+        }              
+
+        </style>        
+    </div>
+</body>
+</html>
